@@ -1,0 +1,46 @@
+* {
+    transition: color 0.2s, background-color 0.2s, transform 0.2s, letter-spacing 0.4s;
+    font-family:monospace;
+    text-align: center;
+    background-color: black;
+    /*user-select: none;*/
+}
+
+p {
+    line-height: -25px;
+    font-size: 21vh;
+    letter-spacing:0.20em;
+    margin-left: 40px;
+    color: white;
+}
+
+button {
+    font-size: 9vh;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color:black;
+    border-radius: 3vh;
+    font-family:monospace;
+    letter-spacing: -0.05em;
+    margin: 0.1em;
+}
+
+.color_button {
+    text-align: right;
+    color: white;
+    background-color: black;
+    border-color: black
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+button:active {
+    border-style: solid;
+    border-color: black;
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    transition: color 0.2s, background-color 0.2s, transform 0.2s;
+}

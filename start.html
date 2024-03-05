@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="start_style.css" id="style" title="Light">
+</head>
+<br> <script type="textjavascript" src="myscripts.js"></script></br>
+
+<script>
+    function play_sound() {
+        var audio = new Audio('audio/click.mp3');
+        audio.play();
+    }
+
+    function start() {
+        play_sound();
+    }
+
+    var IsDark = false;
+    function change_color_mode() {
+        play_sound();
+        if (!IsDark) {
+            document.getElementById("style").setAttribute("href", "start_dark.css")
+            IsDark = true;
+        }
+        else {
+        document.getElementById("style").setAttribute("href", "start_style.css")
+        IsDark = false;
+        }
+    }
+
+    
+</script>
+<body>
+    <div class="color_button">
+        <button onclick="change_color_mode()" class="color_button">☾</button>
+    </div>
+    <p>C<span style="font-size: 19vh;">♜</span>ESS</p>
+    <button onclick="start()">Start</button>
+
+   
+    </body>
+</html>
